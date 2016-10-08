@@ -1,58 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sitio web</title>
+	<!-- Con este meta el contenido se activará la función de zoom táctil-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bst</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilo.css">
 </head>
-<body class="fondotodo">
-	<header class="fondo"><!--  -->
-		<nav class="navbar navbar">
-			<div class="navbar-header">
-				<a href="" class="navbar-brand"><img src="img/logo.png" height="20" width="31" alt=""></a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li><a href="" class="active">Inicio</a></li>
-				<li><a href="">link2</a></li>
-				<li><a href="">link3</a></li>
-			</ul>
-		</nav>
-	</header>
+<body>
+	 <nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="#">LogoWEBv1.1</a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+        	<li class="active"><a href="#">Inicio</a></li>
+        	<li><a href="#jumbo">Sección1</a></li>
+        	<li><a href="#">Sección2</a></li>
+        	<li><a href="#">Sección3</a></li>
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+        	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+        	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesión</a></li>
+     	</ul>
+    	</div>
+  		</div>
+	</nav>
+	<div class="jumbotron text-center" id="jumbo">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque, eum ab modi officiis nam omnis illo. Quibusdam temporibus repudiandae officiis, necessitatibus veritatis assumenda, officia eos, obcaecati autem quisquam ex.</p>
+		<h1>Esto es un jumbotron</h1>
+		<p>Probando BST 3.3.6</p>
+	</div>
+	<div class="page-header">
+		<h2>Esto es un header o cabecera</h2>
+		<nav><a href="">link1</a></nav>
+	</div>
+	<!-- Para usar el tamaño completo de la page usamos container-fluid -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-3">
-				<div class="row">
-					<a href="">OPCIONES</a>
-					<hr>
-				</div>
-				<div class="row">
-					<a href="">DATOS PRESONALES</a>
-				</div>
-				<div class="row">
-					<a href="">ESTUDIOS REALIZADOS</a>
-				</div>
-				<div class="row">
-					<a href="">EVENTOS ASISTIDOS</a>
-				</div>
-				<div class="row">
-					<a href="">MIS FOTOS</a>
-				</div>
-				<div class="row">
-					<a href="">MÚSICA</a>
-				</div>
-				<div class="row">
-					<a href="">PREFERENCIAS</a>
-				</div>
+			<div class="col-sm-4">
+				<h2>Júpiter <small>Planeta gigantescamente gaseoso, el amo y señor de los anillos</small></h2>
+				<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nisi velit, ipsum laboriosam, delectus dolorem nulla a iusto, quia repellendus neque. Veritatis nesciunt, suscipit rerum, amet minima harum ipsa eveniet!</p>
+				<p>Marcador <mark>Esto es un marcador genial no??</mark></p>
+				<hr>
+				<ul class="list-inline">
+					<li>L1</li>
+					<li>L2</li>
+					<li>L2</li>
+				</li>
 			</div>
-			<div class="col-sm-9">
-				
+			<div class="col-sm-4">
+				<h1>Marte</h1>
+				<p class="bg-primary">Los satélites de Marte son: <abbr title="Soy una de las lunas de marte">Phobos</abbr> y Deimos</p>
+				<dl>
+					<dt>Luna 1</dt>
+					<dd>Phobos</dd>
+					<dt>Luna 2</dt>
+					<dd>Deimos</dd>
+				</dl>
+				<p>Algunas palabras reservadas en java son: <code>super</code>, <code>integer</code> y <code>void</code></p>
+				<p>Presiona <kbd>Enter</kbd> para continuar</p>
+				<pre>esto me guarda los espacios en blanco ok
+				esto guarda            espacios          en blanco
+				</pre>
+			</div>
+			<div class="col-sm-4">
+				<h1>Venus</h1>
+				<p>Esto es un <blockquote>blockquote, interesante no?</blockquote></p>
+				<blockquote>Otro blockquote
+				<footer>con footer</footer>
+				</blockquote>
+				<blockquote class="blockquote-reverse">Un blockquote inverso</blockquote>
 			</div>
 		</div>
 	</div>
-	<footer>
-		
-	</footer>
+
+	<div class="page-footer">
+		<h2>Esto es un footer o pié de página</h2>
+	</div>
+	
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
