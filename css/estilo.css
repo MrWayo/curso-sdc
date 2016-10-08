@@ -1,0 +1,10 @@
+.fondo {
+	background-color: #87d8f8;
+	-webkit-box-shadow: -2px 12px 8px -8px rgba(0,0,0,0.45);
+-moz-box-shadow: -2px 12px 8px -8px rgba(0,0,0,0.45);
+box-shadow: -2px 12px 8px -8px rgba(0,0,0,0.45);
+}
+
+.fondotodo {
+	background-color: #dce6ae;
+}
